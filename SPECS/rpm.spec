@@ -32,7 +32,7 @@
 
 %global rpmver 4.16.1.3
 #global snapver rc1
-%global rel 27
+%global rel 28
 %global sover 9
 
 %global srcver %{rpmver}%{?snapver:-%{snapver}}
@@ -653,6 +653,9 @@ fi
 %doc doc/librpm/html/*
 
 %changelog
+
+* Wed Aug 28 2024 Pratham Patel <ppatel@ciq.com> - 4.16.1.3-28
+- Bump release for fixing Peridot refusing to build the same NVR
 
 * Mon Dec 11 2023 Florian Festi <ffesti@redhat.com> - 4.16.1.3-27
 - Backport file handling code from rpm-4.19 to fix CVE-2021-35937,
